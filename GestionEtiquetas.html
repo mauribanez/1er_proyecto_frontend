@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Etiquetas</title>
+    <!-- Enlaza los estilos de Bootstrap y tu archivo CSS personalizado (opcional) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Gestión de Etiquetas</h1>
+        
+        <!-- Etiquetas existentes -->
+        <h2>Etiquetas existentes</h2>
+        <ul id="etiquetasExistentes" class="list-group">
+            <!-- Ejemplo de etiqueta existente -->
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Etiqueta 1
+                <div>
+                    <button class="btn btn-danger btn-sm">Eliminar</button>
+                </div>
+            </li>
+            <!-- Otra etiqueta existente -->
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Etiqueta 2
+                <div>
+                    <button class="btn btn-danger btn-sm">Eliminar</button>
+                </div>
+            </li>
+        </ul>
+        
+        <!-- Botones de acción para etiquetas existentes -->
+        <div class="mt-3">
+            <button id="btnNuevaEtiqueta" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#nuevaEtiquetaModal">Nueva Etiqueta</button>
+            <button id="btnGuardar" class="btn btn-success">Guardar</button>
+            <button id="btnCancelar" class="btn btn-secondary">Cancelar</button>
+        </div>
+        
+        <!-- Vista para crear nueva etiqueta -->
+        <div id="nuevaEtiquetaModal" class="modal fade" tabindex="-1" aria-labelledby="nuevaEtiquetaModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="nuevaEtiquetaModalLabel">Nueva Etiqueta</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="nombreNuevaEtiqueta" class="form-label">Nombre de la Etiqueta</label>
+                            <input type="text" class="form-control" id="nombreNuevaEtiqueta">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary" id="guardarNuevaEtiqueta">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Agrega tu script JavaScript personalizado para gestionar las etiquetas -->
+    <script src="gestionEtiquetas.js"></script>
+</body>
+</html>
