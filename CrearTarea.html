@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Tarea</title>
+    <!-- Enlaza los estilos de Bootstrap y tu archivo CSS personalizado (opcional) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Crear Tarea</h1>
+        <form>
+            <div class="mb-3">
+                <label for="nombreTarea" class="form-label">Nombre de la Tarea</label>
+                <input type="text" class="form-control" id="nombreTarea">
+            </div>
+            <div class="mb-3">
+                <label for="fechaCumplimiento" class="form-label">Fecha de Cumplimiento</label>
+                <input type="date" class="form-control" id="fechaCumplimiento">
+            </div>
+            <div class="mb-3">
+                <label for="etiqueta" class="form-label">Etiqueta</label>
+                <select class="form-select" id="etiqueta">
+                    <option value="trabajo">Trabajo</option>
+                    <option value="personal">Personal</option>
+                    <!-- Puedes agregar más etiquetas aquí -->
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary">Crear Tarea</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Agrega tu script JavaScript personalizado para manejar la creación de tareas -->
+    <script src="crearTarea.js"></script>
+</body>
+</html>
